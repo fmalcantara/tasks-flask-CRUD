@@ -1,0 +1,21 @@
+POST http://127.0.0.1:5000/tasks
+Content-Type: application/json
+
+{
+  "title": "pular",
+  "description": "API'S com Flask "
+}
+###
+GET http://127.0.0.1:5000/tasks
+
+###
+PUT http://127.0.0.1:5000/tasks/eb2eb106-88c7-4db9-bda9-041361cc79ac
+Content-Type: application/json
+
+{
+  "title": "atirar",
+  "description": "atirando",
+  "completed": false
+}
+###
+DELETE http://127.0.0.1:5000/tasks/eb2eb106-88c7-4db9-bda9-041361cc79ac
