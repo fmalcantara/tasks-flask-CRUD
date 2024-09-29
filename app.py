@@ -14,7 +14,7 @@ def create_task():
   new_task = Task(id = uuid4(), title=data.get('title'), description=data.get('description'))
   tasks.append(new_task)
   print(tasks)
-  return jsonify({"message": "Nova Tarefa Criada com sucesso!"})
+  return jsonify({"message": "Nova Tarefa Criada com sucesso!", "id": new_task.id})
 
 # LER ATIVIDADES CRIADAS
 @app.route('/tasks', methods=['GET'])
